@@ -1,0 +1,333 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+}
+
+/*Formatando o cabecalho*/
+.cabecalho{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 95%;
+  background: url(../images/bg-section-bottom-desktop-1)center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.logo{
+  display: flex;
+  justify-content: space-between ;
+  align-items: center;
+  padding: 2%;
+}
+.logo a{
+  padding: 5px;
+  text-decoration: none;
+  color: hsl(322, 100%, 66%);
+  border: solid 1px hsl(322, 100%, 66%);
+  border-radius: 50px;
+}
+.cabecalho div{
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cabecalho div p{
+  margin: 2% 0 2% 0;
+  width: 50%;
+  text-align: center;
+  font-weight: 600;
+}
+.cabecalho div h1{
+  font-weight: 700;
+}
+.cabecalho div button {
+  width: 300px;
+  padding: 10px;
+  color: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  border: none;
+  background-color:hsl(322, 100%, 66%);
+  margin-bottom: 5%;
+}
+.comunit{
+  margin-top: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.comunit ul li:nth-child(2){
+  font-size: 4em;
+  font-weight: 700;
+}
+.comunit ul li:nth-child(3){
+  color: #ccc;
+}
+
+/*formatando o main*/
+
+.together{
+ 
+  padding: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+
+
+.together span{
+  text-align: center;
+  width: 40%;
+}
+.together img{
+  width: 40%;
+}
+.conversations{
+  padding: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: url(../images/bg-section-top-desktop-1.svg) center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.conversations span{
+  width: 40%;
+}
+.conversations img{
+  width: 40%;
+}
+.user{
+  padding: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ background: url(../images/bg-section-top-desktop-1.svg) center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.user span{
+  width: 40%;
+}
+.user img{
+  width: 40%;
+}
+.community{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10%;
+
+}
+.commnuity h2{
+  font-weight: 700;
+  font-size: 1em;
+}
+.community button{
+  width: 180px;
+  padding: 10px;
+  color: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  border: none;
+  background-color:hsl(322, 100%, 66%);
+  margin-top: 15px;
+  font-weight: 700;
+}
+
+footer {
+  padding: 5%;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(1, 21, 53);
+}
+footer section{
+  width: 350px;
+}
+footer section:nth-child(2){
+  width: 400px;
+}
+.info img:nth-child(1){
+  margin-bottom: 15px;
+ 
+}
+.info img:nth-child(3){
+  margin-right: 15px;
+}
+.info img:nth-child(6){
+  margin-right: 15px;
+}
+
+.info p{
+  margin-bottom: 15px;
+}
+.newsletter h2{
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.newsletter p{
+  margin-bottom: 15px;
+}
+.newsletter input{
+  width: 250px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+.newsletter button{
+  color: #fff;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: hsl(322, 100%, 66%);
+}
+
+/*mobile*/
+@media (max-width: 760px) {
+  .cabecalho{
+    margin-top: 10px;
+    width: 100%;
+  }
+  .logo{
+    padding: 0;
+  }
+  .logo a{
+    padding: 3px;
+  }
+  
+  .cabecalho div h1{
+    margin-top: 15px;
+    text-align: center;
+  }
+  .cabecalho div p{
+    margin: 2% 0 2% 0;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .cabecalho div button {
+    width: 250px;
+  }
+  .cabecalho img{
+    max-width: 100%;
+  }
+  .comunit{
+    flex-wrap: wrap;
+  }
+  .together{
+    margin-top: 30%;
+    flex-direction: column-reverse;
+    padding: 2%;
+    justify-content: center;
+  }
+.together span{
+  width: 100%;
+}
+.together img{
+  margin-bottom: 10%;
+  width: 60%;
+}
+.conversations{
+  margin-top: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.conversations span{
+  text-align: center;
+  width: 100%;
+}
+.conversations img{
+  width: 60%;
+}
+.user{
+  margin-top: 30%;
+  display: flex;
+  flex-direction: column-reverse;
+  
+}
+.user span{
+  text-align: center;
+  width: 100%;
+}
+.user img{
+  width: 60%;
+}
+.community{
+  text-align: center;
+}
+footer {
+  flex-direction: column-reverse;
+  justify-content: center; 
+}
+footer section{
+  width: 350px;
+}
+footer section:nth-child(2){
+  width: 400px;
+}
+.info img:nth-child(1){
+  margin-top: 25px;
+ 
+}
+.info img:nth-child(3){
+  margin-right: 0px;
+}
+.info img:nth-child(6){
+  margin-right: 0px;
+}
+
+.newsletter{
+  padding: 5%;
+}
+.newsletter input{
+  width: 190px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+.newsletter button{
+  color: #fff;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: hsl(322, 100%, 66%);
+}
+}
+@media (max-width: 760px){
+ 
+  footer {
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+  }
+  .newsletter input{
+    width: 180px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 20px;
+  }
+} 
